@@ -1,0 +1,19 @@
+Sparsh Arora
+UID: 804653078
+
+CS161 - Hw4
+
+For graph1.txt:
+We notice that RSAT solver shows that graph1 is unsatisfiable when only 3 colors are used.
+However, graph1 is shown to be satisfiable when 4 colors are used.
+
+These two results show us that 3 colors are not sufficient to do the graph collaring correctly. We need at least 4 colors to solve this graph solving problem.
+
+A possible solution: Consider 4 colors c1, c2, c3 and c4.
+IF ( c1 = 1,4 and c2= 5,7 and c3 = 6,2 and c4=3) we would solve the graph collaring problem [where 1,2,3..7 are the nodes labels]
+
+For graph2.txt:
+
+Using RSAT solver we see that it is not solvable with 3 colors. We keep testing by increasing the colors by 1 each time.
+
+We now see that the graph2 is solvable with atleast 8 colors.

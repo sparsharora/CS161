@@ -1,0 +1,32 @@
+1.)
+
+The following is the test case output, which matches the expected output.
+
+[3]> (BFS 'ROOT)
+ROOT
+[4]>  (BFS '((((L E) F) T)))
+(T F L E)
+[5]> (BFS '((R (I (G (H T))))))
+(R I G H T)
+[6]>  (BFS '(((A (B)) C (D))))
+(C A D B)
+[7]> (BFS '((T (H R E) E)))
+(T E H R E)
+[8]> (BFS '((A ((C ((E) D)) B))))
+(A B C D E)
+
+2.)
+
+The following is a test run of the Homer, Maggie, Santa's Little Angel, Poison problem.
+
+> (DFS '(nil nil nil nil) nil)
+((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))
+
+Essentially, we have the following steps
+	- Homer and Baby to West
+	- Homer to East
+	- Homer and Dog to West
+	- Homer and Baby to East
+	- Homer and Poison to West
+	- Homer to East
+	- Homer and Baby
